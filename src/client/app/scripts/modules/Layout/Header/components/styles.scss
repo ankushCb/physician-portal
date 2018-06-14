@@ -1,0 +1,25 @@
+/* header styles  */
+@import '../../../Common/Colors/index.scss';
+
+
+:local(.leftIcon) {
+  
+}
+
+:local(.appBar) {
+  background-color: $primary-bg-color-1 !important;
+  .portal-name {
+    margin-left: 1rem;
+  }
+  .portal-icon {
+    font-size: 1.7rem !important;
+    a {
+      text-decoration: none;
+    }
+  }
+  .logout {
+    cursor: pointer;
+    position: absolute;
+    right: 10px;
+  }
+}

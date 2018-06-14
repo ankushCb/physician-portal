@@ -1,0 +1,180 @@
+@import '../../../Colors/index.scss';
+
+/* Base styling for all button components */
+%wrapper-button {
+  // display: inline-block;
+
+  button {
+    background-color: transparent;
+    font-size: 0.7rem;
+    padding: 5px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    color: inherit;
+    border-radius: 2px;
+
+    .button-label {
+      font-family: Roboto, Helvetica, sans-serif;
+      font-size: 14px;
+      font-weight: normal;
+      font-style: normal;
+      font-stretch: normal;
+      line-height: 1;
+      letter-spacing: normal;
+      text-align: center;
+    }
+
+    .spinner-button {
+      height: 15px;
+      width: 15px;
+    }
+
+    &:disabled {
+      color: $pristine-color;
+
+      .button-label {
+        letter-spacing: 0.5px;
+      }
+    }
+  }  
+}
+
+/* Base Styling for All action buttions
+  Add, Cancel , Edit ,Done, X
+*/
+%action-button {
+  @extend %wrapper-button;
+
+  button {
+    width: 140px;
+    height: 40px;
+    background-color: #5380b5;
+
+    .button-label {
+      color: #ffffff;
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+      font-weight: 500;
+    }
+
+    .fluid {
+
+    }
+    //blue for enabled
+    &:disabled {
+      background-color: #d2d2d2;
+    }
+  }
+}
+
+:local(.button) {
+  @extend %wrapper-button;
+}
+
+/* styles for specific submit button */
+:local(.submit-button) {
+  @extend %wrapper-button;
+
+  color: $valid-color;
+}
+
+/* styles specific for cancel button */
+:local(.cancel-button) {
+  @extend %wrapper-button;
+  
+  color: $invalid-color;
+}
+
+/* Button used under Typeable Select */
+:local(.selectable-button) {
+  @extend %wrapper-button;
+  
+  button {
+    height: 32px;
+    border-radius: 2px;
+    background-color: #ffffff;
+    border: solid 1px #9cb5d4;
+
+    .button-label {
+      width: 18px;
+      height: 14px;
+      opacity: 0.5;
+      color: $selectable-button-label-color;
+    }
+
+    .button-label.highlighted {
+      @extend .button-label;
+      opacity: 1;
+    }
+  }
+}
+
+
+:local(.action-button) {
+  @extend %action-button;
+}
+
+/* Styling for Done Action displayed in bottom view */
+:local(.done-action-button) {
+  @extend %action-button;
+  
+  button {
+    width: 88px;
+    height: 36px;
+    background-color: #5380b5;
+
+    .button-label {
+      color: #ffffff;
+      line-height: normal;
+    }
+
+    &:disabled {
+      background-color: #f6f6f6;
+
+      .button-label {
+        color: #b0b0b0;
+      }
+    }
+  }
+}
+
+/* Styling for Cancel Action displayed in bottom view */
+:local(.transparent-cancel-button) {
+  @extend %action-button;
+  
+  button {
+    border: none;
+    background-color: transparent;
+    
+    .button-label {
+      color: #4d4d4d;
+      line-height: normal;
+    }
+  }
+}
+
+/* Styling for Edit and X buttons in Medication List Page */
+:local(.list-item-action-button) {
+  @extend %action-button;
+
+  button {
+    width: 60px;
+    height: 40px;
+
+    background-color: #ffffff;
+    border: solid 1px #d2d2d2;
+
+    .button-label {
+      color: #9b9b9b;
+    }
+
+    .button-label.cross-mark {
+      cursor: pointer;
+    }
+
+    .button-label.cross-mark:before {
+      content: "✕";
+    }
+  }
+}

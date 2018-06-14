@@ -1,0 +1,39 @@
+@import '../../../../Common/Colors/index.scss';
+
+:local(.medication-results) {
+
+  .results-each-row {
+    margin-top: 1rem;
+    .empty-col {
+      text-align: center;
+    }
+  }
+
+  .submit-btn {
+    float: right;
+    margin-top: 3rem;
+    margin-right: 2rem;
+  }
+}
+
+:local(.time-display-header) {
+  .meal-name {
+    text-align: center;
+    margin-bottom: 0.5rem;
+    font-weight: bold;
+    color: $primary-font-stroke-2;
+  }
+
+  .meal-time {
+    text-align: center;
+  }
+
+  margin-bottom: 1rem;
+}
+
+:local(.result-container) {
+  button {
+    float: right;
+    margin-top: 15px;
+  }
+}

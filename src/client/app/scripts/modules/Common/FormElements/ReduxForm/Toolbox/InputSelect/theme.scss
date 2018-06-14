@@ -1,0 +1,21 @@
+/* styling for form fields */
+
+:local(.dropdown) {
+  width: 100% !important;
+  div[data-react-toolbox] {
+    &:after {
+      top: 40% !important;
+      border-top: 5.48571px solid #5481b8 !important;
+    }
+  }
+}
+
+:local(.input-select) {
+  $width: 8.85rem;
+
+  display: inline-block;
+
+  label {
+    float: left;
+  }
+}

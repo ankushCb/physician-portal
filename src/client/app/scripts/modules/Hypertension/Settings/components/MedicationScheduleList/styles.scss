@@ -1,0 +1,109 @@
+@import '../../../../Common/Colors/index.scss';
+
+.card-value-name {
+  height: 30px;
+  line-height: 30px;
+}
+:local(.dnd-wrapper) {
+  
+  margin-right: 20px;
+  /* styling MedicationScheduleItem  */
+  .schedule-modal {
+    min-height: 16rem;
+    margin-bottom: 1.5rem;
+    cursor: all-scroll;
+    .card-header {
+      font-weight: bold;
+      .name {
+        float: left;
+        color: $primary-font-stroke-2;
+      }
+      .highlighter {
+        background-color: $schedule-list-card-status;
+        box-shadow: 0 0 4px 0 rgba(50, 186, 109, 0.5);
+        width: 12px;
+        height: 12px;
+        display: block;
+        border-radius: 50%;
+        float: right;
+        cursor: pointer;
+        z-index: 10;
+        &.not-active {
+          background-color: $error-stroke-color;
+        }
+      }
+    }
+
+    .active-drop-target {
+      border: 1px solid $error-stroke-color;
+    }
+
+  }
+
+  .medication-schedule-item {
+    
+    .dose {
+      margin-top: 1rem;
+      margin-bottom: 1rem;
+
+      .name {
+        @extend .card-value-name;
+      }
+      .ht-value {
+        input {
+          font-size: 1rem;
+          width: 50%;
+          height: 30px;
+          text-align: center;
+          border: 1px solid $primary-input-border-1;
+        }
+      }
+    }
+
+    .freq {
+      .name {
+        @extend .card-value-name;
+      }
+      .ht-value {
+        .static {
+          width: 50%;
+          height: 30px;
+          line-height: 30px;
+          text-align: center;
+          border: 1px solid $primary-input-border-1;
+          background: $primary-bg-color-3;
+        }
+      }
+    }
+    div[data-react-toolbox='input'] {
+      padding: 5px;
+      input {
+        font-size: 0.9rem;
+        border: 1px solid $primary-input-border-1;
+        height: 2rem;
+        padding-left: 0.4rem;
+      }
+    }
+    div[data-react-toolbox='dropdown'] {
+      position: relative;
+      left: -5px;
+    }
+    .summary {
+      margin-top: 2rem;
+    }
+
+    .each-row {
+      margin-top: 1rem;
+    }
+
+    .active-drag-source {
+      opacity: 0.4;
+      .dragged-message {
+        margin: 0 auto;
+        margin-top: 3rem;
+        opacity: 1;
+        font-weight: bold;
+      }
+    }
+  }
+}

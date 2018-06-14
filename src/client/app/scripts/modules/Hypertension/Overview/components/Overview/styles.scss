@@ -1,0 +1,38 @@
+@import '../../../../Common/Colors/index.scss';
+
+:local(.diabetes-overview) {
+  padding: 2rem;
+  border: 1px solid $primary-card-border-color;
+
+  .each-item {
+    &.not-last {
+      .item-wrapper {
+        border-right: 1px solid $primary-card-border-color;
+      }
+    }
+    .item-wrapper {
+      width: 200px;
+      height: 48px;
+      margin: auto;
+
+      .column-wrapper {
+        float: left;
+        margin-right: 0.5rem;
+        .o-icon {
+          color: #5480b6;
+          font-size: 1.8rem;
+          margin-right: 0.7rem;
+        }
+        .title {
+          color: $primary-font-stroke-1;
+          font-size: 0.9375rem;
+        }
+        .display-value {
+          color: $primary-font-card-header-stroke;
+          font-weight: bold;
+          font-size: 1.4375rem;
+        }
+      }
+    }
+  }
+}

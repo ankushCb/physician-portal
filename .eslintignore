@@ -1,0 +1,26 @@
+# Always ignore this
+node_modules
+webpack.config.js
+webpack.prod.js
+src/client/public
+src/client/app/scripts/modules/**/mockData.js
+src/toolbox
+
+# Ignore this till refactoring
+src/client/app/scripts/helpers
+src/client/app/scripts/root
+src/client/app/scripts/store
+src/client/app/scripts/routes.jsx
+src/client/app/styles
+src/client/app/config.js
+src/client/app/scripts/exception.js
+src/client/app/index.jsx
+
+Include this once refactored
+src/client/app/scripts/modules/CheckUserScope
+# src/client/app/scripts/modules/Common
+# src/client/app/scripts/modules/Diabetes
+src/client/app/scripts/modules/Hypertension
+src/client/app/scripts/modules/Layout
+src/client/app/scripts/modules/Mealtimes
+# src/client/app/scripts/modules/PatientList

@@ -1,0 +1,96 @@
+@import '../../../Common/Colors/index.scss';
+
+/* log book styling */
+
+:local(.log-book-table) {
+  $table-height: 400px;
+  padding: 0rem 1rem;
+  .table {
+    min-height: $table-height;
+    table {
+      thead {
+        color: $primary-font-stroke-2;
+        font-weight: bold;
+        th {
+          padding: 12px 0;
+        }
+      }
+      width: 100%;
+      font-size: 1rem;
+      font-weight: 300;
+      text-align: center;
+      border-collapse: collapse;
+      table-layout: fixed;
+      
+      :not(:first-child) {
+        tr {
+          border-top: 1px solid $primary-card-split-stroke-color;
+        }
+      }
+      td {
+        padding: 12px 0;
+        &.sub-header {
+          font-size: 1rem;
+          color: $primary-font-stroke-2;
+          font-weight: bold;
+        }
+      }
+    }
+  }
+
+  .log-book-pre-loader {
+    min-height: $table-height;
+    vertical-align: middle;
+    display: flex;
+  }
+}
+
+/* pagination bar styling */
+
+:local(.pagination-bar) {
+  $input-width: 3rem;
+  margin-top: 5rem;
+
+  float: right;
+  font-size: 0.9rem;
+
+  .rows-input {
+    display: inline-block;
+    min-width: $input-width;
+    width: $input-width;
+    margin-left: 1rem;
+
+    select {
+      width: $input-width;
+      height: 1rem;
+      background-color: transparent;
+      border: none;
+      font-size: inherit !important;
+    }
+    div[data-react-toolbox="dropdown"] {
+      width: 40px;
+    }
+    div[data-react-toolbox="input"] {
+      input {
+        font-size: 0.8rem;
+        border-bottom: 0;
+      }
+    }
+  }
+
+  .arrows {
+    margin-left: 20px;
+    font-size: 1.2rem;
+    background-color: transparent;
+    color: $primary-font-stroke-2;
+    box-shadow: none;
+    cursor: pointer;
+    min-width: 50px;
+    outline: none;
+    border: none;
+
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+}

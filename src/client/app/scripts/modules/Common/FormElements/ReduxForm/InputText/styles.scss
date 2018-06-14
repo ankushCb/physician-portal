@@ -1,0 +1,33 @@
+@import '../../../Colors/index.scss';
+
+/* colors for simple input */
+$simple-input-background: red;
+
+/* styling simple input text */
+:local(.input-text) {
+  width: 100%;
+  height: 30px;
+  background-color: #ffffff;
+  border: none;
+  outline: none;
+  text-align: center;
+
+  input {
+    width: 100%;
+    height: 30px;
+    box-sizing: border-box;
+    outline: none;
+    &:focus {
+      border: solid 2px #5380b5 !important;
+    }
+    &:disabled {
+      border: none;
+    }
+  }
+}
+
+:local(.display-only) {
+  color: #4b4b4b;
+  font-size: 0.9;
+  line-height: 40px;
+}

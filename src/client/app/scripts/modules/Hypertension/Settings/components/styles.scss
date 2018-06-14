@@ -1,0 +1,59 @@
+@import '../../../Common/Colors/index.scss';
+
+/* styling settings screen */
+:local(.settings-screen) {
+  .add-class-form-modal {
+    width: 450px;
+    height: 250px;
+    max-width: 95%;
+  }
+
+  & > .clearfix {
+    margin-bottom: 10px;
+
+  }
+
+  .rodal-dialog{
+    padding: 40px;
+  }
+
+  .hyp-settings-item {
+    margin-top: 20px;
+  }
+
+  .overview-placer {
+    float: right;
+    margin-bottom: 15px;
+  }
+}
+
+/* add class form styles */
+:local(.add-class-form) {
+  box-sizing: border-box;
+
+  .form-title {
+    color: $modal-header-color-1;
+    font-size: 1.25rem;
+    font-weight: bold;
+    margin-bottom: 1.5rem;
+  }
+
+  .buttons {
+    margin-top: 2rem;
+    float: right;
+    .form-btn {
+      background-color: $primary-btn-bg-color-1;
+      &:nth-child(2) {
+        margin-left: 10px;
+      }
+    }
+  }
+}
+
+.invalid-form-modal {
+    text-align: center;
+    color: red;
+    height: 30%;
+    width: 60%;
+    padding-top: 1%;
+  }

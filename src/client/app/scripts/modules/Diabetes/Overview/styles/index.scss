@@ -1,0 +1,35 @@
+/* general styles for diabetes display */
+
+:local(.diabetes-display-wrapper) {
+  &.not-active {
+    width: 700px;
+    margin: auto;
+    position: relative;
+    top: 100px;
+    button {
+      margin-left: 10px;
+      margin-right: 10px;
+    }
+  }
+  .diabetes-display-item {
+    margin: 20px auto;
+
+    .diabetes-display-log-book-table {
+      table {
+        tr {
+          td {
+            &:first-child {
+              font-size: 1rem;
+            }
+          }
+        }
+      }
+    }
+
+    &.graph {
+      .content {
+        min-height: 500px;
+      }
+    }
+  }
+}

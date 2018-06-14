@@ -1,0 +1,12 @@
+@import '../../../Common/Colors/index.scss';
+
+/* common font styles for settings */
+%settings-heading {
+  font-size: 1.25rem;
+  font-weight: 900;
+  // color: $text-color;
+  padding: 11px 24px 14px;
+  // border-bottom: solid 0.5px $border-color;
+  font-family: Roboto;
+  margin-bottom: 11.5px;
+}

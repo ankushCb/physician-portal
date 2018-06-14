@@ -1,0 +1,17 @@
+@import '../../../../Common/Colors/index.scss';
+
+/* styling for time window headers */
+:local(.time-window-headers) {
+  width: 100%;
+  font-family: Roboto;
+  margin-left: auto;
+  font-size: 0.9rem;
+  padding: 10px 16px;
+  border-bottom: 1px solid $border-color;
+  .name {
+    text-align: center;
+  }
+  .time-slot {
+    text-align: center;
+  }
+}

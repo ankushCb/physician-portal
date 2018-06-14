@@ -1,0 +1,64 @@
+/* styles for schedule */
+@import '../../../../../Common/Colors/index.scss';
+
+:local(.schedule) {
+  text-align: center;
+  font-size: 1rem;
+  border-collapse: collapse;
+  border: 1px solid $primary-card-border-color;
+  padding: 1rem 1rem;
+  color: $primary-font-stroke-2;
+  .each-row {
+    height: 3rem;
+    line-height: 3rem;
+    border-top: 1px solid $primary-input-border-1;
+    .tickmark {
+      display:inline-block;
+      padding: 2px 5px;
+      &:after{
+        /*Add another block-level blank space*/
+        content: '';
+        display: block;
+     
+        /*Make it a small rectangle so the border will create an L-shape*/
+        width: 6px;
+        height: 10px;
+     
+        /*Add a white border on the bottom and left, creating that 'L' */
+        border: solid $primary-font-stroke-2;
+        border-width: 0 2px 2px 0;
+        
+        /*Rotate the L 45 degrees to turn it into a checkmark*/
+        transform: rotate(45deg);
+      }
+    }
+  }
+  .schedule-header {
+    font-weight: bold;
+    height: 2rem;
+    line-height: 2rem;
+    .content-header {
+      text-align: left;
+      padding-left: 1rem;
+      font-weight: bold;
+      font-size: 1.1rem;
+
+      &.bg {
+        text-align: center;
+      }
+    }
+  }
+  .time-window-name {
+    font-size: 1rem;
+
+  }
+
+  .duration {
+    font-size: 1rem;
+  }
+
+  .left-align {
+    text-align: left;
+  }
+  
+}

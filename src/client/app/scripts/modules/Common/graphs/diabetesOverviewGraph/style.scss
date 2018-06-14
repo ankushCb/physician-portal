@@ -1,0 +1,73 @@
+.tick {
+  font-size: 16px;
+}
+
+.diabetes-y-axis {
+  path {
+    stroke: #ffffff;
+  }
+}
+
+.minor-gridline {
+  path {
+    stroke: #ffffff;
+  }
+  line {
+    stroke: #e5e5e5;
+    stroke-width: 1px;
+  }
+
+}
+
+.dia-line-path {
+  path {
+    fill: none;
+    stroke: #5481b8;
+    stroke-width: 2;
+  }
+}
+
+.dia-dotted-line-path {
+  path {
+    fill: none;
+    stroke: #5481b8;
+    stroke-width: 1;
+  }
+}
+
+.graph-icon-basic {
+  border-radius: 16px;
+  font-size: 12px;
+  border: 1px;
+  color: #5481b8;
+  background: #5481b8;
+  &.icon-warning {
+    border: 1px solid;
+  }
+}
+
+.diabetes-hypo {
+  color: #009688;
+}
+
+.diabetes-hyper {
+  color: red;
+}
+
+.diabetes-zero {
+  color: blue;
+  opacity: 0.5;
+}
+
+.diabetes-extreme {
+  box-shadow: none;
+  border-radius: 0px;
+  color: red;
+  background: white;
+  width: 20px;
+}
+
+.popup-icon {
+  padding-top: 5px;
+}
+

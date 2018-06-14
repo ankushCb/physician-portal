@@ -1,0 +1,21 @@
+@import '../../../Colors/index.scss';
+
+/* colors for simple input */
+$simple-input-background: $accent-color-1;
+
+/* styling simple input text */
+:local(.simple-input-decimal) {
+  width: 100%;
+  height: 30px;
+  background-color: #ffffff;
+  border: none;
+  outline: none;
+  text-align: center;
+}
+
+:local(.display-only) {
+  color: #4b4b4b;
+  font-size: 0.9;
+  line-height: 40px;
+  border: none;
+}

@@ -1,0 +1,53 @@
+@import '../../../Common/Colors/index.scss';
+
+$primary-height: 70px;
+
+:local(.patient-details-view) {
+  background-color: $secondary-bg-color-1;
+  box-shadow: 0 1px 0 0 #e1e1e1;
+  height: $primary-height;
+  &.expand {
+    height: 250px;
+  }
+
+  .patient-details-header {
+    height: 100%;
+    line-height: 70px;
+
+    .name {
+      margin-left: 46.5px;
+      font-size: 1.5rem;
+      font-weight: bold;
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      color: $primary-font-stroke-2;
+    }
+    
+    .patient-detail-col {
+      font-size: 0.9rem;
+      color: $primary-font-stroke-1;
+      .toggle {
+        cursor: pointer;
+      }
+    }
+    .secondary-view {
+      height: 170px;
+      line-height: 2.3rem;
+      .secondary-container {
+        margin-left: 46.5px;
+      }
+      .secondary-name {
+        font-size: 0.9rem;
+        font-weight: bold;
+        color: $primary-font-stroke-2;
+      }
+      .patient-value {
+        margin-left: 1.5rem;
+        font-size: 0.9rem;
+        color: $primary-font-stroke-1;
+      }
+    }
+  }
+
+}

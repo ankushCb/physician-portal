@@ -1,0 +1,11 @@
+/* layout module styles */
+@import '../../../../styles/colors';
+
+/* layout wrapper styles */
+:local(.layout-wrapper) {
+  width: 100%;
+  background-color: #FFFFFF;
+  border-top: none;
+  padding: 10px 25px 60px 25px;
+  box-sizing: border-box;
+}

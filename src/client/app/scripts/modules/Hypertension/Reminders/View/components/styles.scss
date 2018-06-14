@@ -1,0 +1,19 @@
+@import '../../../../Common/Colors/index.scss';
+
+/* styling for reminders view screen */
+:local(.reminders-view-screen) {
+  font-family: Roboto;
+  .each-row {
+
+    margin-top: 20px;
+    .name {
+      font-size: 1rem;
+      font-weight: 600;
+      color: $text-color;
+    }
+
+    .dose {
+      font-size: 0.8rem;
+    }
+  }
+}

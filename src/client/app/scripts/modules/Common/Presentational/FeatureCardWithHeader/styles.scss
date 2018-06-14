@@ -1,0 +1,30 @@
+@import '../../Colors/index.scss';
+
+:local(.feature-card-with-header) {
+    background-color: #FFF;
+    padding-bottom: 1.5rem;
+    min-height: 200px;
+
+    .header {
+      float: left;
+      color: $primary-font-card-header-stroke;
+      font-size: 1.5rem;
+      font-weight: bold;
+      padding: 1.1rem 1.5rem 0.8rem;
+      margin-bottom: 0.3rem;
+    }
+    .sub-header-card {
+      float: left;
+      padding: 1.5rem 0rem 0.8rem;
+      font-size: 0.9375rem;
+    }
+    .side-element {
+      float: right;
+      margin-top: 1.1rem;
+    }
+    .content {
+      margin-left: 1.25rem;
+      width: calc(100% - 1.25rem);
+    }
+
+  }

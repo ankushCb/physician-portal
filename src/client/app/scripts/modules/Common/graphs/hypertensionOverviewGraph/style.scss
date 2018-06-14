@@ -1,0 +1,61 @@
+.diabetes-y-axis {
+  path {
+    stroke: #ffffff;
+  }
+}
+
+.minor-gridline {
+  path {
+    stroke: #ffffff;
+  }
+  line {
+    stroke: #e5e5e5;
+    stroke-width: 1px;
+  }
+
+}
+
+.line-path {
+  path {
+    fill: none;
+    stroke: #555a50;
+    stroke-width: 3;
+  }
+}
+
+.dotted-systolic-line-path, .dotted-diastolic-line-path {
+  path {
+    fill: none;
+    stroke: #555a50;
+    stroke-width: 3;
+  }
+}
+
+
+/* mixin to render required css for icon */
+@mixin takeIcon($icon-class-name, $content) {
+  &.#{$icon-class-name} {
+    &::before {
+      content: $content;
+    }
+  }
+}
+
+i.icon-logo {
+  &::before {
+    content: '\e827';
+  }
+}
+
+.hypertension-hypo {
+  color: #009688;
+}
+
+.hypertension-hyper {
+  color: red;
+}
+
+.hypertension-zero {
+  color: blue;
+  opacity: 0.5;
+}

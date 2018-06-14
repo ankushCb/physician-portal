@@ -1,0 +1,14 @@
+@import '../../Common/Colors/index.scss';
+
+:local(.check-user-scope) {
+  color: $primary-font-stroke-1;
+  font-size: 28px;
+
+  &.app-wrapper {
+    font-size: 16px;
+    text-align: left;
+    font-family: Roboto;
+    border: 1px solid $primary-card-border-color;
+    min-height: 900px;
+  }
+}

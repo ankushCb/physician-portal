@@ -1,0 +1,199 @@
+@import '../../../styles/index.scss';
+@import '../../../../../Common/Colors/index.scss';
+
+/* schedule table styles */
+:local(.schedule-table) {
+  table {
+    border-collapse: collapse;
+  }
+
+  .each-row {
+    border-top: 1px solid $primary-card-split-stroke-color;
+    margin-top: 0.5rem;
+  }
+
+  table {
+    text-align: left;
+    width: 100%;
+
+    .center-align {
+      text-align: center;
+    }
+
+    th {
+      font-size: 1.1rem;
+      font-weight: bold;
+      padding-bottom: 0.7rem;
+      color: $table-data-color
+    }
+
+    td {
+      padding: 7px 7px;
+      color: $table-data-color;
+      div[data-react-toolbox='input'] {
+        padding: 2px;
+        width: 150px;
+
+        input {
+          font-size: 0.85rem !important;
+          border: 0.5px solid #d8d8d8;
+          padding-left: 0.5rem;
+        }
+      }
+
+      label[data-react-toolbox='checkbox'] {
+        margin-bottom: 0px;
+      }
+
+      &.mealname {
+        font-size: 1rem;
+      }
+
+      &.dose {
+        font-size: 0.65rem;
+      }
+
+      &.duration {
+        font-size: 1.2rem;
+        cursor: pointer;
+        width: 160px;
+        padding-right: 60px;
+
+        .separator {
+          display: inline-block;
+          margin-left: 3px;
+          margin-right: 3px;
+        }
+
+        .display-time {
+          display: inline-block;
+
+          .meridian,
+          .time {
+            display: inline-block;
+          }
+
+          .meridian {
+            margin-left: 1px;
+            font-size: 0.7rem;
+            margin-bottom: 5%;
+            vertical-align: middle;
+          }
+        }
+      }
+      .carb-count-text {
+        font-size: 0.9rem;
+        position: relative;
+        top: -0.5rem;
+        left: 0.4rem;
+      }
+    }
+  }
+
+  .global-time-editor-modal {
+    height: 450px;
+    width: 500px;
+    padding: 20px;
+  }
+}
+
+/* Confirm Changes on Diabetes Settings */
+:local(.confirm-diabetes-settings){
+  .rodal-dialog{
+    padding: 40px;
+  }
+}
+
+.save-confirm {
+  top: 10% !important;
+  bottom: 70% !important;
+  left: 35% !important;
+  right: 55% !important;
+  font-size: 0.9rem;
+  width: 50% !important;
+
+  .save-confirm-btn-grp {
+    float: right;
+    margin-top: 20px;
+    margin-right: 15px;
+    margin-bottom: 10px;
+
+    button {
+      margin-left: 10px;
+    }
+  }
+
+  .spinner-container {
+    float: left;
+  }
+}
+
+/* meal change buttons styles */
+:local(.meal-change-option) {
+  margin-top: 10px;
+
+  & > div {
+    @extend %settings-button-panel;
+  }
+}
+
+/* global time editor styles */
+:local(.global-time-editor) {
+  .empty-div {
+    height: 400px;
+  }
+
+  .meal-name {
+    text-align: center;
+  }
+
+  .btn-wrapper {
+    display: flex;
+    justify-content: center;
+  }
+
+  .selected-meal {
+    font-weight: bold;
+    font-size: 24px;
+    display: flex;
+    justify-content: center;
+  }
+
+  .rodal-dialog{
+    width: 400px;
+    height: 400px;
+    padding: 40px;
+  }
+}
+
+:local(.add-new-direct) {
+  float: right;
+  margin-left: 10px;
+  position: relative;
+  .dropdown {
+    padding: 5px;
+    position: absolute;
+    color: $primary-btn-bg-color-2;
+    top: 40px;
+    width: 140px;
+    border-radius: 2px;
+    background-color: $secondary-bg-color-3;
+    box-shadow: 0 0 8px 0 rgba(0, 0, 0, 0.2);
+    border: solid 1px $primary-opacity-font-1;
+    div {
+      margin-top: 5px;
+    }
+    .each-meal {
+      cursor: pointer;
+
+      &:hover {
+        background-color: $hovered-color;
+      }
+    }
+  }
+}
+
+.confirm-save-modal {
+  width: 650px !important;
+  height: 400px !important;
+}

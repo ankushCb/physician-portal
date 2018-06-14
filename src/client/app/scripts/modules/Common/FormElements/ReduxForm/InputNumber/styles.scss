@@ -1,0 +1,24 @@
+@import '../../../Colors/index.scss';
+
+/* colors for simple input */
+$simple-input-background: $accent-color-1;
+
+/* styling simple input text */
+:local(.simple-input-number) {
+  background-color: #ffffff;
+  border: none;
+  outline: none;
+  text-align: center;
+  width: 4.5rem !important;
+  height: 2.05rem !important;
+  float: right !important;
+  border: 1px solid #e1e1e1 !important;
+  font-size: 1rem;
+}
+
+:local(.display-only) {
+  color: #4b4b4b;
+  font-size: 0.9;
+  padding-top: 5px;
+  border: none;
+}

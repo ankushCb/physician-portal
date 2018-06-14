@@ -1,0 +1,68 @@
+svg {
+  display: block;
+  margin: auto;
+}
+.inner-mark {
+  fill: #3a6ca9;
+}
+.circumference {
+  stroke: #eeeeee;
+  fill: #eeeeee;
+  stroke-width: 30px;
+}
+
+.start-holder, .stop-holder {
+  z-index: 1;
+}
+.start-holder circle:hover {
+  cursor: pointer;
+}
+
+.start-holder circle {
+  fill: #ffffff;
+  stroke: #3a6ca9;
+  stroke-width: 3px;
+  opacity: 0.8;
+}
+
+.start-holder circle.dragging {
+  fill: white;
+  stroke: #3a6ca9;
+  opacity: 0.4;
+}
+
+.stop-holder circle:hover {
+  cursor: pointer;
+}
+
+.stop-holder circle {
+  fill: #ffffff;
+  stroke: #3a6ca9;
+  stroke-width: 3px;
+  opacity: 0.8;
+}
+
+.stop-holder circle.dragging {
+  fill: white;
+  stroke: #3a6ca9;
+  opacity: 0.4;
+}
+
+.startTime, .stopTime {
+  border: 1px solid #e2e2e2;
+  stroke:#3a6ca9;
+  stroke-width: 0.5px;
+}
+
+.timedisplay-number {
+  font-size: 24px;
+}
+
+.inner-display {
+  font-size: 10px;
+  color: #9a988f;
+}
+.hour-indicator {
+  font-size: 10px;
+  stroke: #3A5A84;
+}

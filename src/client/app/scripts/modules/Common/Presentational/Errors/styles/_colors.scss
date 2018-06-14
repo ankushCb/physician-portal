@@ -1,0 +1,6 @@
+/* error pages colors */
+@import '../../../Colors/index.scss';
+
+$error-page-background-color: $accent-color-2;
+$error-message-color: $text-color;
+$error-rescue-link-color: $text-secondary-light-color;

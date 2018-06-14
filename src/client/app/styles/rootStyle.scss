@@ -1,0 +1,49 @@
+@import './fonts.scss';
+@import '../../../toolbox/theme.css';
+
+@font-face {
+  font-family: Roboto;
+  src:
+    local('Roboto'),
+    local('-apple-system'),
+    local('BlinkMacSystemFont'),
+    local('Helvetica Neue'),
+    local('Segoe UI'),
+    local('Oxygen'),
+    local('Ubuntu'),
+    local('Cantarell'),
+    local('Fira Sans'),
+    local('Droid Sans'),
+    local('Tahoma'),
+    local('sans-serif');
+  font-weight: normal;
+  font-style: normal;
+}
+
+html {
+  font-size: 1.5625vw;
+}
+
+@media screen and (max-width: 640px) {
+  html {
+    font-size: 10px;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  html {
+    font-size: 16px;
+  }
+}
+
+div#app {
+  min-width: 640px;
+  max-width: 1024px;
+  margin: 20px auto;
+}
+
+.clearfix::after {
+  content: '';
+  display: block;
+  clear: both;
+}

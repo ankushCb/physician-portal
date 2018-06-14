@@ -1,0 +1,18 @@
+@import '../../../Common/Colors/index.scss';
+
+/* meds styling */
+
+:local(.meds) {
+  .med {
+    display: inline-block;
+    height: 0.45rem;
+    width: 0.45rem;
+    background-color: $secondary-bg-color-4;
+    border-radius: 50%;
+    margin-left: 2px;
+
+    &.active {
+      background-color: $completed-bg-color;
+    }
+  }
+}

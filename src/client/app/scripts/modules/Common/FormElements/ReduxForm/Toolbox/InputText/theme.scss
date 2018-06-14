@@ -1,0 +1,16 @@
+/* styling for form fields */
+@import '../../../../Colors/index.scss';
+
+:local(.inputElement) {
+  width: 100% !important;
+}
+
+:local(.bar) {
+  &:after {
+    background-color: $primary-bg-color-1 !important;
+  }
+  &:before {
+    background-color: $primary-bg-color-1 !important;
+  }
+}
+

@@ -1,0 +1,38 @@
+/* practitioner details styles */
+@import '../../../../../styles/colors.scss';
+@import '../../../Common/Colors/index.scss';
+
+// $primary-height: 70px;
+
+:local(.practitioner-details-view) {
+  background-color: $secondary-bg-color-1;
+  box-shadow: 0 1px 0 0 #E1E1E1;
+  // height: $primary-height;
+  color: $text-color;
+  font-family: Roboto;
+  font-size: 1rem;
+  font-weight: 300;
+
+  .details-bar {
+    height: 100%;
+    line-height: 70px;
+
+    .name {
+      font-size: 1.5rem;
+      font-weight: bold;
+      color: $primary-font-stroke-2;
+    }
+
+    .practitioner-value {
+      font-size: 0.9rem;
+      color: $primary-font-stroke-1;
+    }
+
+    .clinics {
+      .label {
+        font-weight: 900;
+        margin-right: 2rem;
+      }
+    }
+  }
+}

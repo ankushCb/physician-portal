@@ -1,0 +1,42 @@
+
+:local(.check) {
+  border-radius: 50% !important;
+  width: 50px !important;
+  height: 50px !important;
+  
+  &:after {
+    
+    width: 10px !important;
+    height: 25px !important;
+    top: 10px !important;
+    left: 15px !important;
+    border-right-width: 5px !important;
+    border-bottom-width: 5px !important;
+    
+  }
+}
+
+:local(.checked) {
+  border-radius: 50% !important;
+  width: 50px !important;
+  height: 50px !important;
+  background-color: #32ba32 !important;
+  border-color: #32ba32 !important;
+
+  &:after {
+    -webkit-animation: none  !important;
+    animation: none !important;
+    width: 10px !important;
+    height: 25px !important;
+    top: 10px !important;
+    left: 15px !important;
+    border-right-width: 5px !important;
+    border-bottom-width: 5px !important;
+  }
+}
+
+:local(.disabled) {
+  opacity: 0.3;
+}
+
+

@@ -1,0 +1,126 @@
+@import '../../../../Common/Colors/index.scss';
+
+/* styling for edit reminder panel */
+:local(.reminders-screen) {
+  .add-reminder-modal {
+    width: 33%;
+    min-width: 470px;
+  }
+  .edit-buttons {
+    button {
+      margin-left: 10px;
+    }
+  }
+}
+
+:local(.edit-reminder-panel) {
+  font-family: Roboto;
+  color: $text-color;
+  font-size: 0.9rem;
+  margin-top: 20px;
+  display: flex;
+  align-items: stretch;
+  background-color: $delete-color;
+  border-radius: 4px;
+
+  .delete-button {
+    width: 20px;
+    color: $accent-color-2;
+    text-align: center;
+    line-height: 5em;
+    font-size: 1rem;
+    cursor: pointer;
+  }
+  .field-name {
+    height: 20px;
+    width: 160px;
+  }
+  .edit-section {
+    width: 100%;
+    border-radius: 4px;
+    box-shadow: 1px 1px 10px $text-color;
+    background-color: $accent-color-2;
+    padding: 13px 16px;
+    box-sizing: border-box;
+    &.invalid {
+      border: 2px solid red;
+    }
+    .small-heading {
+      font-size: 0.7rem;
+      padding-left: 14px;
+    }
+    
+    .name {
+      height: 50px;
+    }
+
+    .dose-and-type {
+      height: 50px;
+    }
+    
+    .time-window-name {
+      text-align: center;
+    }
+    .dose {
+      margin-top: 15px;
+      text-align: center;
+    }
+
+    .edit-reminder-panel-time-windows {
+      text-align: center;
+      cursor: pointer;
+
+      .dose {
+        margin-top: 12px;
+        color: $text-secondary-dark-color;
+        padding-left: 30px;
+
+        .plus-icon {
+          background-color: $text-secondary-dark-color;
+          color: $text-secondary-light-color;
+          border-radius: 50%;
+          padding: 2.5px 4px;
+        }
+      }
+    }
+  }
+}
+
+:local(.add-reminder-form) {
+  width: 305px;
+  max-width: 100%;
+  margin: auto;
+  padding-bottom: 20px;
+
+  .add-reminder-field {
+    width: 100%;
+
+    label {
+      float: left;
+    }
+
+    input {
+      float: right;
+      width: 88.5px;
+    }
+
+    &.checkbox {
+      margin-top: 5px;
+    }
+  }
+
+  .add-reminder-time-windows {
+    margin-top: 20px;
+  }
+
+  .add-reminder-buttons {
+    margin-top: 20px;
+    text-align: center;
+
+    button {
+      &:nth-child(2) {
+        margin-left: 5px;
+      }
+    }
+  }
+}

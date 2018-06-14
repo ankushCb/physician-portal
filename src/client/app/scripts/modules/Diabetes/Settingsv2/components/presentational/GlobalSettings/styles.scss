@@ -1,0 +1,181 @@
+@import '../../../styles/type.scss';
+@import '../../../../../../../styles/colors';
+@import '../../../../../common/Colors/index.scss';
+
+/* common styles */
+%glucose-settings-label {
+  font-size: 1rem;
+  font-weight: normal;
+}
+
+/* glucose settings styling */
+:local(.global-settings) {
+
+  .card-disabled {
+    div[data-react-toolbox='card'] {
+      background-color: $disabled-card-color;
+    }
+  }
+
+  .global-card {
+    min-height: 300px;
+    overflow: visible;
+    font-weight: bold;
+    color: $settings-card-color
+  }
+
+  .sub-heading {
+    font-size: 1.1rem;
+    font-weight: 900;
+    display: inline-block;
+  }
+
+  .glucose-settings-info {
+    width: 8.93rem;
+    padding: 9px 0;
+
+    .carb-label {
+      @extend %glucose-settings-label;
+      float: left;
+    }
+
+    .value {
+      @extend %glucose-settings-label;
+      height: 2.4rem;
+      float: right;
+      &:hover {
+        overflow: visible;
+      }
+    }
+  }
+
+  .card-header {
+    font-size: 1.1rem;
+  }
+
+  .card-seperator {
+    border-top: $primary-input-border-1;
+  }
+
+  .each-regimen {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+  }
+
+  .glucose-settings-input {
+    width: 100%;
+    height: 40px;
+    margin-bottom: 1rem;
+    margin-top: 1rem;
+  
+    .carb-label {
+      @extend %glucose-settings-label;
+      float: left;
+    }
+
+    .carb-value {
+      @extend %glucose-settings-label;
+
+      float: right;
+      &:hover {
+        overflow: visible;
+      }
+    }
+
+    label {
+      @extend %glucose-settings-label;
+      font-size: 1rem;
+      margin: auto 0;
+      padding-right: 0.3125rem;
+    }
+
+    .dropdown,
+    .text-box {
+      margin-top: 5px;
+
+      label {
+        @extend %glucose-settings-label;
+      }
+    }
+
+    .text-box {
+      width: 100%;
+    }
+
+    div[data-react-toolbox='dropdown'] {
+      float: right;
+      display: inline-block;
+      ul {
+        max-height: none;
+      }
+      div[data-react-toolbox='input'] {
+        padding: 0;
+        input {
+          padding: 5% 3%;
+          border-right: 1px solid $primary-input-border-1;
+          border-left: 1px solid $primary-input-border-1;
+          border-top: 1px solid $primary-input-border-1;
+        }
+      }
+    }
+
+    .dropdown {
+      width: 100%;
+
+      select {
+        float: right;
+      }
+    }
+
+    .input-threshold {
+      border: 1px solid #e1e1e1;
+      width: 50%;
+      float: right;
+    }
+  }
+
+  .carb-counting {
+    margin-bottom: 0;
+
+    .note {
+      color: $settings-card-note-color;
+      font-size: 0.8rem;
+    }
+
+    input[value="0"] {
+      color: #fff;
+      &:focus {
+        color: #000;
+      }
+    }
+  }
+
+  
+  :local(.correctional-insulin) {
+    .negative-correcional-wrapper {
+      margin-top: 15px;
+    }
+    .toggle-switch {
+      float: right;
+    }
+    .error {
+      font-size: 0.8rem;
+    }
+  }
+}
+
+:local(.insulin-regimen) {
+  .regimen-dropdown-label {
+    float: left;
+  }
+  .insulin-options {
+    float: right;
+    width: 130px !important;
+    font-size: 0.85rem;
+    div[data-react-toolbox="input"] {
+      input {
+        font-size: 0.85rem;
+      }
+    }
+  }
+}

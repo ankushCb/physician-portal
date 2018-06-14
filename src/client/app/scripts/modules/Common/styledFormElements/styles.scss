@@ -1,0 +1,161 @@
+@import '../Colors/index.scss';
+
+/* styles for custommized styles input elements */
+
+:local(.tag-check-box) {
+  color: $text-secondary-dark-color;
+
+  position: relative;
+  top: 7px;
+
+  .tickmark{
+    display:inline-block;
+    padding: 2px 5px;
+    &:after{
+      /*Add another block-level blank space*/
+      content: '';
+      display: block;
+
+      /*Make it a small rectangle so the border will create an L-shape*/
+      width: 6px;
+      height: 10px;
+
+      /*Add a white border on the bottom and left, creating that 'L' */
+      border: solid #000;
+      border-width: 0 2px 2px 0;
+
+      /*Rotate the L 45 degrees to turn it into a checkmark*/
+      transform: rotate(45deg);
+    }
+  }
+
+  .tag-check-input {
+    visibility: hidden;
+  }
+
+  & > label {
+    padding: 7px;
+    border-radius: 50%;
+    opacity: 0.2;
+    border: 1px solid;
+  }
+
+  &.checked {
+    color: #ffffff;
+
+    border: none;
+    .tickmark {
+        display:inline-block;
+        padding: 2px 5px;
+        &:after{
+          /*Add another block-level blank space*/
+          content: '';
+          display: block;
+
+          /*Make it a small rectangle so the border will create an L-shape*/
+          width: 6px;
+          height: 10px;
+
+          /*Add a white border on the bottom and left, creating that 'L' */
+          border: solid #ffffff;
+          border-width: 0 2px 2px 0;
+
+          /*Rotate the L 45 degrees to turn it into a checkmark*/
+          transform: rotate(45deg);
+      }
+    }
+    & > label {
+      padding: 7px;
+      background-color: #5480b6;
+      opacity: 1;
+    }
+
+    &.tag > label {
+      background: #00a992;
+    }
+  }
+
+  &.disabled {
+    opacity: 0.6;
+  }
+}
+
+/* toggle switch styling */
+
+:local(.toggle-switch) {
+  .switch-check-box {
+    display: none;
+  }
+
+  .horizon-strip {
+    display: inline-block;
+    padding: 0.4rem 0.9rem;
+    border-radius: 0.4rem;
+    background-color: transparentize($text-secondary-dark-color, 0.5);
+
+    &.on {
+      background-color: transparentize($primary-color, 0.5);
+    }
+  }
+
+  .circular-switch {
+    background-color: $text-secondary-dark-color;
+    border-radius: 50%;
+    padding: 0.55rem;
+    display: inline-block;
+    margin-top: 1px;
+    transform: translate3d(-1.8rem, 0.15rem, 0);
+    transition: transform 400ms;
+
+    &.on {
+      transform: translate3d(-1.1rem, 0.15rem, 0);
+      background-color: $primary-color;
+    }
+    &.special-off:not(.on) {
+      box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.24), 0 0 1px 0 rgba(0, 0, 0, 0.12);
+      background-color: #f1f1f1;
+    }
+  }
+}
+
+/* search input styles */
+
+:local(.search-input) {
+  $search-icon-size: 0.87rem;
+
+  width: 17.2rem;
+  background-color: $accent-color-4;
+  box-sizing: border-box;
+  padding: 4px 5px;
+  box-shadow: 0 1px 1px transparentize($text-color, 0.76);
+
+  .search-icon {
+    color: $text-secondary-dark-color;
+    font-size: $search-icon-size;
+    display: inline-block;
+    position: relative;
+    top: 3px;
+    i {
+      font-size: 1.2rem;
+    }
+  }
+
+  .search-input-box {
+    float: right;
+    width: calc(100% - #{$search-icon-size} - 0.5rem);
+    height: 100%;
+
+    input {
+      background-color: transparent;
+      border: none;
+      width: 100%;
+      height: 100%;
+      outline: none;
+      font-size: 0.9rem;
+
+      &::placeholder {
+        color: #4b4b4b;
+      }
+    }
+  }
+}

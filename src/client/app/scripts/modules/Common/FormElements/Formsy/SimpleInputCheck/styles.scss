@@ -1,0 +1,45 @@
+@import '../../../Colors/index.scss';
+
+%standard-label {
+  font-family: Roboto;
+  font-size: 0.9rem;
+  color: $text-secondary-dark-color;
+}
+
+:local(.input-check) {
+  width: 100%;
+
+  input[type='checkbox'] {
+    float: none !important;
+    width: auto !important;
+    display: none;
+
+    & ~ label {
+      @extend %standard-label;
+
+      float: left;
+      width: 100%;
+
+      .box {
+        float: right;
+        padding: 0.2px 1.1px;
+        border: 1px solid;
+
+        &::before {
+          content: '\2714';
+          color: transparent;
+        }
+      }
+    }
+
+    &:checked {
+      & ~ label .box {
+        background-color: $primary-color;
+
+        &::before {
+          color: $accent-color-2;
+        }
+      }
+    }
+  }
+}

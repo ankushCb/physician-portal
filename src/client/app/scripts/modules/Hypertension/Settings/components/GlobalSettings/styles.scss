@@ -1,0 +1,53 @@
+/* styling for settings screen from hypertension */
+@import '../../../../Common/Colors/index.scss';
+
+:local(.global-settings) {
+  .title {
+    font-size: 1.1rem;
+    font-weight: bold;
+  }
+
+  .regimen-card {
+    min-height: 15rem;
+    padding: 1% 4% !important;
+    overflow: visible;
+  }
+  .select-regimen {
+    font-size: 1rem;
+
+    .title {
+      display: inline-block;
+      font-size: 1rem;
+      font-weight: bold;
+      line-height: 1;
+      color: $settings-card-color;
+    }
+
+    &-select {
+      display: inline-block;
+      margin-left: 23px;
+      font-size: 0.7rem;
+    }
+
+    div[data-react-toolbox='input'] {
+      padding: 5px;
+      input {
+        font-size: 0.9rem;
+        border: 1px solid $primary-input-border-1;
+        height: 2rem;
+        padding-left: 0.4rem;
+      }
+    }
+
+    .btn-wrapper {
+      float: right;
+      button {
+        width: 110px;
+        height: 2rem;
+        .span {
+          font-size: 0.7rem;
+        }
+      }
+    }
+  }
+}

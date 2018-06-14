@@ -1,0 +1,6 @@
+@import '../../../Colors/index.scss';
+
+:local(.checked) {
+  background-color: $primary-bg-color-1 !important;
+  border-color: $primary-bg-color-1 !important;
+}

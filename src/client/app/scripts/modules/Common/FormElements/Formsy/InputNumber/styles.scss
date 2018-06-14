@@ -1,0 +1,57 @@
+:local(.input-number) {
+  display: inline-block;
+
+  label {
+    // @extend %standard-label;
+
+    float: left;
+  }
+
+  .input-container {
+    $step-button-width: 1.6rem;
+
+    width: 4.5rem;
+    height: 2.05rem;
+    float: right;
+    border: 1px solid #e1e1e1;
+
+    input {
+      text-align: center;
+      height: 100%;
+      width: 100%;
+      float: left;
+      
+      font-size: 1rem;
+      padding-left: 2px;
+      &:disabled {
+        background-color: #f9f9f9;
+      }
+      // color: $text-secondary-dark-color;
+    }
+
+    .button-wrapper {
+      float: left;
+      position: relative;
+      height: 100%;
+
+      button {
+        // width: $step-button-width;
+        padding: 0;
+        font-size: 0.7rem;
+        height: 50%;
+        position: absolute;
+
+        &.step-down {
+          bottom: 0;
+        }
+      }
+    }
+
+    input,
+    button {
+      outline: none;
+      border: none;
+      box-sizing: border-box;
+    }
+  }
+}

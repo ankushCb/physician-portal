@@ -1,0 +1,28 @@
+%standard-label {
+  font-family: Roboto;
+  font-size: 0.9rem;
+}
+
+/* input text box styles */
+:local(.input-text-box) {
+  $width: 4.5rem;
+
+  min-width: $width;
+  display: inline-block;
+
+  label {
+    @extend %standard-label;
+
+    float: left;
+  }
+
+  input {
+    float: left;
+    width: $width;
+    height: 2.05rem;
+    // background-color: $accent-color-4;
+    // border: 1px solid $border-color;
+    font-size: 1rem;
+    padding-left: 2px;
+  }
+}

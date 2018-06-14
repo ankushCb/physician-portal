@@ -1,0 +1,67 @@
+/* styles for error pages */
+@import '../../../Colors/index.scss';
+
+/* page not found */
+:local(.page-not-found) {
+  background-color: $error-page-background-color;
+  // height: 100vh;
+  // width: 100vh;
+  display: table;
+  margin: 0 auto;
+
+  .message {
+    display: table-cell;
+    vertical-align: middle;
+    text-align: center;
+    font-family: Roboto;
+
+    p {
+      font-size: 18px;
+      font-weight: 600;
+      color: $error-message-color;
+    }
+
+    a {
+      text-decoration: underline;
+      color: $error-message-color;
+      // color: $error-rescue-link-color;
+    }
+  }
+}
+
+/* SomethingWentWrong styles */
+:local(.something-went-wrong) {
+  font-family: Roboto;
+  font-size: 1.2rem;
+}
+
+
+/* Error Page Container Style  */
+:local(.error-container){
+  margin: 0 auto;
+  margin-top: 10vh;
+  height: 80vh;
+  border: solid;
+  border-color: $error-message-color;
+  color: $error-message-color;
+
+  .header-message{
+    font-family: Roboto;
+    text-align: center;
+    font-weight: 800;
+  }
+
+  .message{
+    vertical-align: inherit;
+  }
+
+  .page-not-found{
+    height: inherit;
+    width: inherit;
+  }
+
+  .children-wrapper{
+    text-align: center;
+    font-weight: 700;
+  }
+}

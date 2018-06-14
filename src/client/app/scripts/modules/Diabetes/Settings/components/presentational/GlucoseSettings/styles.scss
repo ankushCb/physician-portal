@@ -1,0 +1,160 @@
+@import '../../../styles/type.scss';
+@import '../../../../../../../styles/colors';
+@import '../../../../../Common/Colors/index.scss';
+
+/* common styles */
+%glucose-settings-label {
+  font-size: 1rem;
+  font-weight: normal;
+}
+
+/* glucose settings styling */
+:local(.global-settings) {
+
+  .card-disabled {
+    div[data-react-toolbox='card'] {
+      background-color: $disabled-card-color;
+    }
+  }
+  .global-card {
+    min-height: 300px;
+    overflow: visible;
+    font-weight: bold;
+    color: $settings-card-color
+  }
+  .sub-heading {
+    font-size: 1.1rem;
+    font-weight: 900;
+    display: inline-block;
+  }
+
+  .glucose-settings-info {
+    width: 8.93rem;
+    padding: 9px 0;
+
+    .carb-label {
+      @extend %glucose-settings-label;
+      float: left;
+    }
+
+    .bolus-value {
+      @extend %glucose-settings-label;
+      height: 2.4rem;
+      float: right;
+      &:hover {
+        overflow: visible;
+      }
+    }
+  }
+  .card-header {
+    font-size: 1.1rem;
+  }
+  .card-seperator {
+    border-top: $primary-input-border-1;
+  }
+  .each-regimen {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+  }
+  .glucose-settings-input {
+    width: 100%;
+    margin-bottom: 1rem;
+    margin-top: 1rem;
+    &.carb-mid {
+      margin-top: 0rem;
+      margin-bottom: 0.8rem;
+    }
+    &.carb-top {
+      margin-top: 1.25rem;
+      margin-bottom: 1.5rem;
+    }
+    &.carb-bottom {
+      margin-top: 1.25rem;
+      margin-bottom: 0.5rem;
+    }
+    input[value="0"] {
+      color: #fff;
+      &:focus {
+        color: #000;
+      }
+    }
+    .carb-label {
+      @extend %glucose-settings-label;
+
+      float: left;
+    }
+
+    .bolus-value {
+      @extend %glucose-settings-label;
+      height: 30px;
+      float: right;
+      &:hover {
+        overflow: visible;
+      }
+    }
+
+    .dropdown,
+    .text-box {
+      margin-top: 5px;
+
+      label {
+        @extend %glucose-settings-label;
+      }
+    }
+
+    .text-box {
+      width: 100%;
+    }
+
+    div[data-react-toolbox='dropdown'] {
+      float: right;
+      display: inline-block;
+      ul {
+        max-height: none;
+      }
+      div[data-react-toolbox='input'] {
+        padding: 0;
+        input {
+          padding: 5% 3%;
+          border-right: 1px solid $primary-input-border-1;
+          border-left: 1px solid $primary-input-border-1;
+          border-top: 1px solid $primary-input-border-1;
+        }
+      }
+    }
+
+    .dropdown {
+      width: 100%;
+
+      select {
+        float: right;
+      }
+    }
+  }
+
+  .carb-counting {
+    margin-bottom: 0;
+    
+    .note {
+      margin: 0;
+      color: $settings-card-note-color;
+      font-size: 1rem;
+    }
+  }
+
+  .premade-regimen {
+    .toggle-switch {
+      float: right;
+    }
+
+    .error {
+      font-size: 0.8rem;
+    }
+  }
+
+  .correctional-insulin {
+    .toggle-switch {
+      float: right;
+    }
+  }
+}

@@ -1,0 +1,45 @@
+/* date-input styles */
+
+%redux-input-label {
+  text-align: left;
+  font-size: 0.55rem;
+}
+
+:local(.input-date) {
+  height: 53px;
+
+  .dropdowns {
+    float: left;
+    height: calc(100% - 11px);
+    width: calc(100% - 1.2rem);
+    border-width: 1px 0;
+    border-style: solid;
+    border-color: lightgrey;
+    border-top: 0;
+    padding: 5px 0;
+    box-sizing: border-box;
+
+    :local(.dropdown) {
+      outline: 0;
+      border-width: 0;
+      width: 33.33%;
+      background-color: transparent;
+      text-align: center;
+      height: 100%;
+
+      &:not(:last-child) {
+        border-right-width: 1px;
+      }
+    }
+  }
+
+  .valid-icon {
+    float: right;
+    padding-top: 5px;
+  }
+
+  .label {
+    @extend %redux-input-label;
+  }
+}
+

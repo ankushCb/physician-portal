@@ -1,0 +1,50 @@
+
+$valid-color: #009688;
+$pristine-color: #686868;
+$invalid-color: #F00;
+$warning-color: #F6A623;
+$basic-border-color: #d9d9d9;
+$basic-background-color: #ffffff;
+$selectable-button-label-color: #3a6ca9;
+$font-color: #000000;
+
+
+// To be refactored color
+/* color definition */
+$primary-color: #3A5A84;
+$accent-color-1: #EEF5FD;
+$accent-color-2: #FFF;
+$accent-color-3: #D7D3D3;
+$accent-color-4: #F5F5F5;
+$border-color: #979797;
+$text-color: #3A5A84;
+$text-secondary-light-color: #FFF;
+$text-secondary-dark-color: #4D4D4E;
+$delete-color: #FF2323;
+$error-color: #FF2323;
+$line-saperator-color: #EFEFEF;
+$error-page-background-color: #FFFFFF;
+$error-message-color: #FF2323;
+
+/* input component colors */
+
+/* text-box-input */
+$text-box-background: $accent-color-1;
+$text-box-border: $border-color;
+
+/* input-select-box */
+$input-select-background: $accent-color-1;
+$input-select-border: $border-color;
+$input-select-text: $text-color;
+
+/* button */
+$button-background: #A2A2A2;
+$button-shadow-color: #000;
+$button-text-color: #FFF;
+$button-border-color: #000;
+
+/* tag check box input */
+$check-box-with-icon-color: $text-color;
+$check-box-with-icon-background: $border-color;
+
+

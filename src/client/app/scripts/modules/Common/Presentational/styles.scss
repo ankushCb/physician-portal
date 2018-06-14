@@ -1,0 +1,249 @@
+/* styles for presentational elements */
+@import '../../../../styles/colors';
+@import '../Colors/index.scss';
+
+/* show preloader styles */
+:local(.show-preloader) {
+  .pre-loader {
+    width: 100%;
+    text-align: center;
+
+    & > div {
+      margin: auto;
+    }
+  }
+}
+
+/* card with header styles */
+:local(.card-with-header) {
+
+  width: 100%;
+  background-color: #FFF;
+  padding-bottom: 20px;
+  .selector {
+    &:hover {
+      cursor: pointer;
+    }
+  }
+  div.active {
+    text-decoration: underline;
+  }
+  .marker {
+    font-size: 0.9rem;
+  }
+  .circle {
+    display: inline-block;
+    width: 14px;
+  	height: 14px;
+  	-moz-border-radius: 10px;
+  	-webkit-border-radius: 10px;
+  	border-radius: 10px;
+    margin-left: 8px;
+    opacity: 0.8;
+    &.green {
+      background: green;
+    }
+    &.black {
+      background: black;
+    }
+    &.red {
+      background: red;
+    }
+    &.violet {
+      background: blue;
+    }
+
+  }
+  .header {
+    width: 90%;
+    float: left;
+    color: #5481b8;
+    font-size: 1.5rem;
+    font-weight: bold;
+    padding: 1.1rem 1.5rem 0.8rem;
+    margin-bottom: 0.3rem;
+  }
+
+  .content {
+    margin-left: 21.5px;
+    // border: 1px solid #e2e2e2;
+    width: calc(100% - 21.5px - 22px);
+  }
+
+  .side-element {
+    float: right;
+    div[data-react-toolbox="input"] {
+      border: 0;
+      input {
+        height: 2rem;
+        border: 0;
+        background: #f3f3f3;
+        padding: 0.3rem 1rem;
+        color: #4b4b4b;
+      }
+      
+    }
+  }
+
+  .card-pre-loader {
+    height: 185px;
+    display: flex;
+    vertical-align: middle;
+  }
+}
+/* card with header styles */
+:local(.graph-card-with-header) {
+  
+    width: 100%;
+    background-color: #FFF;
+    padding-bottom: 20px;
+    .selector {
+      &:hover {
+        cursor: pointer;
+      }
+    }
+    div.active {
+      text-decoration: underline;
+    }
+    .marker {
+      font-size: 0.9rem;
+    }
+    .circle {
+      display: inline-block;
+      width: 14px;
+      height: 14px;
+      -moz-border-radius: 10px;
+      -webkit-border-radius: 10px;
+      border-radius: 10px;
+      margin-left: 8px;
+      opacity: 0.8;
+      &.green {
+        background: green;
+      }
+      &.black {
+        background: black;
+      }
+      &.red {
+        background: red;
+      }
+      &.violet {
+        background: blue;
+      }
+  
+    }
+    .header {
+      float: left;
+      color: #5481b8;
+      font-size: 1.5rem;
+      font-weight: bold;
+      padding: 1.1rem 1.5rem 0.8rem;
+      margin-bottom: 0.3rem;
+    }
+  
+    .content {
+      margin-left: 21.5px;
+      border: 1px solid #e2e2e2;
+      // width: calc(100% - 21.5px - 22px);
+    }
+  
+    .side-element {
+      float: right;
+      div[data-react-toolbox="input"] {
+        border: 0;
+        input {
+          height: 2rem;
+          border: 0;
+          background: #f3f3f3;
+          padding: 0.3rem 1rem;
+          color: #4b4b4b;
+        }
+        
+      }
+    }
+  
+    .card-pre-loader {
+      height: 185px;
+      display: flex;
+      vertical-align: middle;
+    }
+  }
+
+/* list styles */
+:local(.list) {
+  padding: 1rem 0.5rem;
+  &.withBorder {
+    border: solid 1px $table-border-color
+  }
+  .no-items {
+    font-size: 1rem;
+    color: transparentize($text-color, 0.3);
+    text-align: center;
+    font-family: Roboto;
+    font-weight: 600;
+  }
+}
+
+/* stats bar item */
+:local(.stats-bar-item) {
+  text-align: center;
+
+  .round {
+    height: 40px;
+    width: 40px;
+    border: 0.5px solid $border-color;
+    border-radius: 50%;
+    display: table-cell;
+    vertical-align: middle;
+    text-align: center;
+    font-size: 1.8rem;
+    margin-bottom: 8px;
+  }
+
+  .note {
+    font-family: Roboto;
+    font-size: 0.8rem;
+    color: $text-color;
+    font-weight: 300;
+  }
+}
+
+:local(.warning-modal) {
+  height: 500px;
+  padding: 1rem 3rem;
+  .icon-wrapper {
+    text-align: center;
+    color: $primary-font-stroke-2;
+    margin-bottom: 1.5rem;
+    i {
+      font-size: 6rem;
+      background-color: $primary-bg-color-1;
+      color: $secondary-bg-color-3;
+      border: 1px solid $primary-card-split-stroke-color;
+      border-radius: 50%;
+    }
+  }
+  .button-wrapper {
+    position: absolute;
+    bottom: 1rem;
+    right: 1rem;
+  }
+  .content-wrapper {
+    font-size: 1.5rem;
+  }
+}
+
+.lt-hypo-bg {
+  background-color: #c55353;
+  border-radius: 1px;
+  color: #ffffff;
+  padding: 2px 3px;
+}
+
+.gt-goal-bg {
+  color: #5480b6;
+}
+
+.gt-hyper-bg {
+  color: #c55353;
+  
+}

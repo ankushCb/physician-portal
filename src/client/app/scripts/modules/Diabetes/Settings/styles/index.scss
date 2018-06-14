@@ -1,0 +1,102 @@
+@import '../../../Common/Colors/index.scss';
+
+:local(.settings-container-wrapper) {
+  .insulin-tables {
+    position: relative;
+    height: 100%;
+
+    .back-link {
+      float: right;
+      font-family: Roboto;
+      color: $primary-color;
+      text-decoration: none;
+    }
+
+    .settings-item {
+      margin: 15px auto;
+    }
+  }
+}
+
+/* settings button panel */
+%settings-button-panel {
+  float: right;
+
+  .button {
+    &:first-child {
+      margin-right: 10.5px;
+    }
+  }
+}
+
+.overview-holder {
+  float: right;
+}
+.dose-input,
+.insulin-input {
+  float: left;
+}
+
+.dose-header,
+.insulin-header {
+  float: left;
+}
+
+.subsection-header {
+  margin-bottom: 20px;
+  font-weight: 900;
+}
+
+.table-spinner-load {
+  height: 300px;
+  width: 1200px;
+  display: table;
+  overflow: hidden;
+  text-align: center;
+}
+
+.table-cell-spinner-load {
+  display: table-cell;
+  vertical-align: middle;
+}
+
+.spinner-content {
+  width: 50%;
+  margin: 0 auto;
+}
+
+.addnewmeal-insulinType {
+  float: left;
+  margin-left: 5px;
+}
+
+.addnewmeal-insulin {
+  margin-left: 100px;
+}
+
+.insulin-header {
+  margin-left: 15px;
+}
+
+.scheduletable-basedose {
+  width: 40px;
+}
+
+.scheduletable-insulin,
+.scheduletable-insulin-type {
+  width: 120px;
+  font-size: 12px;
+}
+
+.rc-time-picker-panel-clear-btn {
+  display: none;
+}
+
+.submit-button-submitted {
+  display: inline-block;
+}
+
+.icon-dropdown {
+  font-size: 1rem;
+  padding-left: 5px;
+}

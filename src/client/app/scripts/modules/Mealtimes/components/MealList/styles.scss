@@ -1,0 +1,20 @@
+@import '../../../Common/Colors/index.scss';
+
+:local(.meal-list-header) {
+  // padding: 0 46.5px;
+  margin-top: 3rem;
+  margin-bottom: 1rem;
+  font-weight: bold;
+  color: $primary-font-stroke-2;
+}
+
+:local(.meal-list-row) {
+  cursor: pointer;
+  &.active {
+    background-color: $hovered-color;
+  }
+  padding: 0 46.5px;
+  color: $primary-font-stroke-2;
+  border-top: 1px solid $primary-input-border-1;
+  padding: 1.5rem 0rem;
+}

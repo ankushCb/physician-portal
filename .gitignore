@@ -1,0 +1,8 @@
+src/client/public
+src/client/index.html
+.vscode/
+npm-debug.log
+reports/
+selenium-debug.log
+node_modules/
+drivers/

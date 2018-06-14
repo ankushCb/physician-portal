@@ -1,0 +1,157 @@
+@import '../../../styles/type';
+@import '../../../styles/index.scss';
+@import '../../../../../Common/Colors/index.scss';
+
+:local(.insulin-prescription) {
+  .content {
+    width: calc(100% - 42px) !important;
+    color: $table-data-color;
+  }
+
+  .insulin-prescription-table {
+    border-collapse: collapse;
+    width: 100%;
+    font-size: 1rem;
+    text-align: center;
+
+    .heading {
+      font-weight: bold;
+    }
+
+    .meal-time-heading {
+      border-bottom: solid 0.5px $primary-input-border-1;
+
+      .heading {
+        vertical-align: top;
+      }
+    }
+
+    .bg-check-tr {
+      border-bottom: 0.5px solid $primary-input-border-1;
+    }
+
+    .correctional-tr {
+      border-bottom: 0.5px solid $primary-input-border-1;
+    }
+
+    .check-mark {
+      width: 10px;
+      margin: auto;
+      &:after {
+        content: '';
+        display: block;
+        width: 4px;
+        height: 8px;
+        border: solid #000;
+        border-width: 0 2px 2px 0;
+        transform: rotate(45deg);
+      }
+    }
+    .hypo {
+      padding-bottom: 3.25px;
+    }
+
+    .hyper {
+      padding-top: 3.25px;
+    }
+
+    .dose {
+      padding: 3.25px 0;
+    }
+
+    .bg-check,
+    .correctional {
+      font-size: 2rem;
+
+    }
+
+    td {
+      padding: 15px 0;
+    }
+  }
+}
+
+:local(.carb-counting-prescription) {
+  background-color: $secondary-bg-color-3;
+
+  .body {
+    background-color: $secondary-bg-color-3;
+    width: 59rem;
+    max-width: 100%;
+    margin: auto;
+    border: 0.5px solid $primary-input-border-1;
+
+    .heading {
+      @extend %settings-heading;
+
+      .close-btn {
+        font-size: 0.9rem;
+        float: right;
+        font-weight: normal;
+        cursor: pointer;
+      }
+    }
+  }
+}
+
+:local(.carb-counting-dose-table) {
+  padding: 15px 0 15px 24.5px;
+
+  .details {
+    font-size: 1.1rem;
+    font-weight: 600;
+
+  }
+
+  /* table having doses */
+  table.dose-table {
+    padding-top: 10px;
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+
+    .carb-ranges {
+      .label {
+        font-size: 1.1rem;
+      }
+
+      .range {
+        font-weight: 300;
+        font-size: 0.9rem;
+      }
+    }
+
+    tr {
+      &:first-child {
+        border-bottom: 0.5px solid transparentize($primary-input-border-1, 0.8);
+      }
+
+      &:not(:first-child) {
+        td {
+          padding: 5px 0;
+        }
+      }
+    }
+
+    td {
+      font-size: 1rem;
+      text-align: center;
+
+      &.glucose-range {
+        font-weight: 600;
+      }
+    }
+  }
+
+  &:not(:last-child) {
+    border-bottom: 0.5px solid $primary-input-border-1;
+  }
+}
+
+/* change decision button group styles */
+:local(.change-decision-btn-group) {
+  @extend %settings-button-panel;
+  button {
+    margin-right: 10px;
+  }
+}

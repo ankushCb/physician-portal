@@ -1,0 +1,53 @@
+/* styling for medication classes */
+@import '../../../../../Common/Colors/index.scss';
+
+/* medication classes */
+:local(.medication-classes) {
+  /* medication class styling */
+}
+
+:local(.medication-class-input) {
+  margin-top: 0.5rem;
+  display: flex;
+  align-items: center;
+
+  .each-row {
+    width: 100%;
+    border-bottom: 1px solid $primary-input-border-1;
+    .delete {
+      display: none;
+
+      &.active {
+        display: inline;
+        float: right;
+        line-height: 1.6rem;
+        height: 1.6rem;
+        cursor: pointer;
+        color: $primary-bg-color-1;
+      }
+    }
+  }
+
+  div[data-react-toolbox='input'] {
+    padding: 5px;
+    input {
+      font-size: 0.9rem;
+      height: 1.6rem;
+      padding-left: 0.4rem;
+      border-bottom: none;
+    }
+  }
+
+  .name {
+    font-size: 1rem;
+    color: $primary-font-stroke-2;
+  }
+
+  .medicine-name {
+    input {
+      font-size: 1rem;
+      color: $settings-card-note-color;
+    }
+  }
+
+}

@@ -1,0 +1,279 @@
+@import '../../Common/Colors/index.scss';
+
+/* patient list styles */
+
+:local(.patient-list) {
+  .list {
+    font-family: Roboto;
+    font-size: 0.875rem;
+    text-align: center;
+    color: $text-secondary-dark-color;
+
+    table {
+      width: 100%;
+
+      th {
+        font-weight: 500;
+        color: #7D7D7D;
+        cursor: pointer;
+
+        .sorted-field {
+          margin-right: 2px;
+          color: #5481B8;
+          font-weight: bolder;
+
+          &:hover {
+            opacity: 1;
+          }
+        }
+
+        i {
+          position: relative;
+          left: 0.25rem;
+          top:0.9rem;
+          font-size: 2rem;
+          visibility: hidden;
+        }
+
+        .display-icon {
+          visibility: visible;
+        }
+      }
+
+      td,
+      th {
+        padding: 1.175rem 0;
+        text-align: left;
+
+        &.link {
+          a {
+            text-decoration: none;
+            color: $bolder-font-color;
+          }
+        }
+
+        &.bold {
+          color: $bolder-font-color;
+          font-size: 1rem
+        }
+      }
+
+      td {
+        border-bottom: solid 0.5px #E9EDF0;
+      }
+    }
+  }
+
+  .patient-list-search {
+    float: left;
+    margin-right: 10px;
+    height: 30px;
+  }
+
+  .add-patient-modal {
+    width: 30rem;
+    height: 90%;
+  }
+
+  .rounded-corners {
+    border-radius: 4px;
+    font-weight: 500;
+    line-height: 1;
+  }
+}
+
+:local(.side-elements-wrapper) {
+  div {
+    display: inline;
+
+    button {
+      width: 110px;
+      height: 2rem;
+
+      span.button-label {
+        font-size: 0.65rem;
+      }
+    }
+  }
+}
+
+/* new patient personal form styling */
+:local(.new-patient-personal-form) {
+  width: 100%;
+  margin: auto;
+  padding-bottom: 20px;
+
+  .header {
+    .modal-info {
+      float: left;
+      color: #212121;
+      font-size: 1.25rem;
+      font-weight: bold;
+    }
+    .modal-number {
+      float: right;
+      color: #212121;
+      opacity: 0.4;
+    }
+  }
+  .question {
+    margin-top: 2.75rem;
+    color: black;
+    opacity: 0.38;
+    line-height: 2;
+    font-size: 0.75rem;
+  }
+  .wake-up-time {
+    [data-react-toolbox="input"] {
+      padding-top: 0px;
+    }
+  }
+  &.daily-schedule {
+    [data-react-toolbox="input"] {
+      padding-top: 0px;
+      &:after {
+        top: 25% !important;
+      }
+    }
+  }
+  .no-bottom-border {
+    input {
+      font-size: 0.875rem;
+      color: black;
+      opacity: 0.54;
+    }
+    [data-react-toolbox="input"] {
+      padding-top: 0px;
+      &:after {
+        top: 25% !important;
+      }
+    }
+  }
+  .active-highlighter {
+    &:focus {
+      border-bottom: 1px solid #303f9f;
+      -webkit-transition: ease-in 0.5s; /* Safari */
+      transition: ease-in 0.5s;
+    }
+  }
+  .meal-time-label {
+    font-size: 1rem;
+    line-height: 1.5;
+    opacity: 0.87;
+    color: black;
+  }
+
+  i {
+    font-size: 42px;
+    color: grey;
+    border: 1px solid #e2e2e2;
+    border-radius: 50%;
+  }
+
+  header {
+
+  }
+  .heading,
+  .sub-heading {
+    font-size: 1.25rem;
+    font-weight: bold;
+  }
+
+  .field-note {
+    font-size: 0.8rem;
+    margin: 5px 0;
+  }
+
+  .heading {
+    font-size: 12.5 rem;
+  }
+
+  .sub-heading,
+  .note {
+    font-size: 0.8rem;
+  }
+
+  .field,
+  .buttons,
+  .note {
+    margin-top: 20px;
+  }
+  label {
+    &.gender-label {
+      color: rgba(0, 0, 0, 0.26);
+      font-size: 13px;
+      margin-left: 10px;
+      margin-top: 5px;
+      margin-bottom: 11px;
+    }
+  }
+  .onboarding-label {
+    font-size: 0.75rem;
+    color: rgba(0,0,0,.26);
+  }
+  label[data-react-toolbox="radio-button"] {
+    float: left;
+    margin-right: 10px;
+  }
+  .buttons {
+    position: absolute;
+    bottom: 1rem;
+    right: 1rem;
+    button {
+      float: left;
+      margin-left: 5px;
+    }
+    .new-patient-submit {
+      margin-left: 20px;
+    }
+  }
+}
+
+:local(.exit-warning) {
+  height: 500px;
+  padding: 3rem 3rem;
+  .icon-wrapper {
+    text-align: center;
+    color: $primary-font-stroke-2;
+    margin-bottom: 1.5rem;
+    i {
+      font-size: 6rem;
+      background-color: $primary-bg-color-1;
+      color: $secondary-bg-color-3;
+      border: 1px solid $primary-card-split-stroke-color;
+      border-radius: 50%;
+    }
+  }
+  .warning-header {
+    margin-top: 2rem;
+    color: #5b5b5b;
+    font-size: 30px;
+  }
+  .warning-content {
+    margin-top: 1rem;
+    color: #4b4b4b;
+    font-size: 12px;
+  }
+  .button-wrapper {
+    position: absolute;
+    bottom: 1rem;
+    right: 1rem;
+  }
+  .content-wrapper {
+    text-align: center;
+    width: 300px;
+    margin: 0 auto;
+    font-size: 1.5rem;
+  }
+}
+
+.care-modal {
+  overflow: visible !important;
+  width: 700px !important;
+  height: 600px;
+}
+
+.onboard-modal {
+  width: 640px !important;
+  height: 600px;
+}

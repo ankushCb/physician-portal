@@ -1,0 +1,49 @@
+/* styling threshold module */
+@import '../../../../../Common/Colors/index.scss';
+
+:local(.thresholds) {
+  .threshold-wrapper {
+    min-height: 15rem;
+  }
+
+  .line-seperator {
+    border-top: 1px solid $primary-input-border-1;
+    margin-top: 1rem;
+  }
+}
+
+:local(.threshold-element) {
+  margin-top: 1rem;
+  font-size: 1rem;
+  display: flex;
+  align-items: center;
+
+  .thresholds-title {
+    display: inline-block;
+    font-size: 1rem;
+    flex: 1 1 80px;
+    color: $primary-font-stroke-2;
+  }
+
+  .threshold-inputs {
+    flex: 3 3 auto;
+    display: flex;
+    font-size: 1rem;
+    input {
+      font-size: 1rem;
+      flex: 2 2 20px;
+      width: 3rem;
+      height: 2rem;
+      background-color: $secondary-bg-color-3 !important;
+      border: solid 1px $primary-input-border-1;
+    }
+  }
+
+  .threshold-divider {
+    margin-left: 0.5rem;
+    margin-right: 0.5rem;
+    font-size: 1rem;
+    line-height: 2rem;
+    height: 2rem;
+  }
+}

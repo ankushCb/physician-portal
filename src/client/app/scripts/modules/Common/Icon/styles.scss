@@ -1,0 +1,47 @@
+
+/* mixin to render required css for icon */
+@mixin takeIcon($icon-class-name, $content) {
+  &.#{$icon-class-name} {
+    &::before {
+      content: $content;
+    }
+  }
+}
+
+/* icon class managing css icons */
+:local(.icon) {
+  font-family: CustomIconFont;
+  font-style: normal;
+
+  /* different icons */
+  @include takeIcon('icon-logo', '\e827');
+  @include takeIcon('icon-switch-on', '\f205');
+  @include takeIcon('icon-switch-off', '\f204');
+  @include takeIcon('icon-email', '\e81f');
+  @include takeIcon('icon-phone', '\e820');
+  @include takeIcon('icon-search', '\e821');
+  @include takeIcon('icon-bg', '\e823');
+  @include takeIcon('icon-plus', '\e822');
+  @include takeIcon('icon-check', '\e800');
+  @include takeIcon('icon-warning', '\e801');
+  @include takeIcon('icon-meds', '\e80d');
+  @include takeIcon('icon-stethoscope', '\e80e');
+  @include takeIcon('icon-vitals', '\e80f');
+  @include takeIcon('icon-radio-off', '\f10c');
+  @include takeIcon('icon-calendar', '\e810');
+  @include takeIcon('icon-tick', '\e800');
+  @include takeIcon('icon-warn', '\e80c');
+  @include takeIcon('icon-exchange', '\F0EC');
+  @include takeIcon('icon-clock', '\E802');
+  @include takeIcon('icon-filter', '\E817');
+  @include takeIcon('icon-sort-desc', '\E818');
+  @include takeIcon('icon-sort-asc', '\E81A');
+  @include takeIcon('icon-a1c', '\E803');
+  @include takeIcon('icon-wakeup', '\E81C');
+  @include takeIcon('icon-breakfast', '\E819');
+  @include takeIcon('icon-lunch', '\E805');
+  @include takeIcon('icon-dinner', '\E804');
+  @include takeIcon('icon-bedtime', '\E81B');
+  @include takeIcon('icon-dropdown', '\E825');
+  @include takeIcon('icon-modal-warning', '\E81E')
+}

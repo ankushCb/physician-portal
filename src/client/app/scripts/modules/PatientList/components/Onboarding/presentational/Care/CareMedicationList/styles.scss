@@ -1,0 +1,97 @@
+$content-height: 40px;
+
+:local(.care-input-row) {
+  margin: 10px;
+
+  margin: 10px -32px;
+  &.active {
+    background-color: #f7f7f7;
+  }
+  
+  padding: 15px;
+
+  .index {
+    text-align: center;
+    height: $content-height;
+    color: #4b4b4b;
+    line-height: $content-height;
+    font-size: 15px;
+  }
+
+  .care-input {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    & > div {
+      height: 40px;
+    }
+    input {
+      border: 1px solid #e2e2e2;
+      height: $content-height;
+      border-radius: 2px;
+      font-size: 15px;
+      height: 40px;
+      height: $content-height;
+      outline: none;
+      &:focus {
+        border: solid 2px #5380b5 !important;
+      }
+    }
+    button {
+      height: $content-height;
+    }
+    &.frequency-select {
+      button {
+        height: 35px;
+      }
+    }
+  }
+
+}
+
+:local(.care-med-form-wrapper) {
+  color: #4b4b4b;
+  font-size: 0.9rem;
+  height: 100%;
+
+  .hoverable-btn {
+    opacity: 0.5;
+    &:hover {
+      background-color: #edf2f7;
+      color: #3a6ca9;
+      opacity: 1;
+    }
+  }
+
+  .submit-button {
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+  }
+
+
+  .full-width {
+    button {
+      height: $content-height;
+      line-height: $content-height;
+      width: 100%;
+    }
+    &:disabled {
+      background-color: #d2d2d2;
+    }
+  }
+
+  .half-width {
+    button {
+      height: $content-height !important;
+      line-height: $content-height !important;
+      width: 40%;
+      min-width: 0px;
+      &:first-child {
+        margin-left: 10%;
+        margin-right: 10%;
+      }
+    }
+  }
+
+}
